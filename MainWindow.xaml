@@ -1,0 +1,46 @@
+﻿<!--This program demonstrates the various
+    input/output for various variable types-->
+    <Window x:Class="VariableExampleWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VariableExampleWPF"
+        mc:Ignorable="d"
+        Title="MainWindow"
+            WindowState="Maximized"
+            FontSize="24">
+<!--Stack Panel for layout-->
+    <StackPanel>
+        <Label Content="Variable Examples" HorizontalAlignment="Center"/>
+        <Rectangle Height="20" Fill="Navy"/>
+<!--Binary Section-->
+        <Label Content="Binary" />
+        <CheckBox x:Name="chkPepperoni" Content="Pepperoni" Checked="chkPepperoni_Checked"
+                  Unchecked="chkPepperoni_Checked"/>
+        <Rectangle Height="20" Fill="Navy"/>
+<!--Integers Section-->        
+        <Label Content="Integers"/>
+        <TextBox x:Name="txtIntEntry"/>
+        <Button x:Name="btnIntEntry" 
+                Content="Enter a number"
+                Click="btnIntEntry_Click"/>
+<!--Doubles Section-->
+        <Label Content="Doubles"/>
+        <TextBox x:Name="txtDoubleEntry"/>
+        <Button x:Name="btnDoubleEntry"
+                Content="Enter a decimal number"
+                Click="btnDoubleEntry_Click"/>
+
+        <Label Content="Char"/>
+        <TextBox x:Name="txtCharEntry"
+                 MaxLength="1"
+                 />
+        <Button x:Name="btnCharEntry"
+                Content="Enter a character"
+                Click="btnCharEntry_Click"
+                />
+            
+
+    </StackPanel>
+</Window>
